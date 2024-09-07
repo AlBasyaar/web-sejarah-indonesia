@@ -190,6 +190,7 @@ section#countries h2 {
 }
 
 .card img {
+  margin: 0 auto;
   width: 80%;
   object-fit: cover;
   border-radius: 10px;
