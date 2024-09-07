@@ -1,0 +1,279 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+nav .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin: 0 15px;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  color: #ff6347;
+}
+
+nav .hamburger {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+   nav .hamburger {
+    display: block;
+  }
+
+ nav  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 20px;
+    gap: 10px;
+    width: auto;
+  }
+
+  nav .nav-links.show {
+    display: flex;
+  }
+}
+
+/* Hero Section */
+header#hero {
+  height: 100vh;
+  background: url('./sejarah.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1eee0;
+  text-align: center;
+}
+
+header#hero .hero-content {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+header#hero h1 {
+  font-size: 4em;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+header#hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.scroll-button {
+  text-decoration: none;
+  padding: 15px;
+  background-color: #ff6347;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #ff4500;
+}
+
+@media (max-width: 768px) {
+  header#hero h1 {
+    font-size: 2rem;
+  }
+
+  header#hero p {
+    font-size: 1.2rem;
+  }
+}
+
+/* About Section */
+section#about {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+section#about h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+section#about p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  width: 75%;
+  margin: auto;
+}
+
+/* Countries Section */
+section#countries {
+  padding: 50px 0;
+  background: linear-gradient(45deg, #ff6347, #ff7f50);
+  color: white;
+}
+
+section#countries h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.8em;
+  margin-top: 15px;
+}
+
+.card p {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sejarah Section */
+section#sejarah {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+section#sejarah h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+section#sejarah .content {
+  width: 80%;
+  margin: auto;
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+section#sejarah h3 {
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+section#sejarah p {
+  margin-top: 15px;
+}
+
+/* Video Section */
+section#video {
+  padding: 60px 0;
+  background: linear-gradient(45deg, #ff6347, #ff7f50);
+  color: white;
+}
+
+section#video h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.video-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
