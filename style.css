@@ -13,63 +13,42 @@ body {
 }
 
 /* Navbar Styles */
-nav {
-  background-color: #333;
-  color: white;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+
+.navbar {
+  background-color: rgb(241, 108, 108);
+}
+.navbar-toggler {
+  background-color: #faf1f1; 
+  border: 1px solid #464444; 
+}
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23000" stroke-width="2" d="M4 6h22M4 15h22M4 24h22" /%3E%3C/svg%3E'); /* Mengubah warna icon garis menjadi hitam */
 }
 
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  margin: auto;
+.navbar-brand, .nav-link {
+  color: white !important;
 }
 
-nav .logo {
-  font-size: 1.8em;
+.navbar-brand {
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
-nav .nav-links {
-  list-style: none;
-  display: flex;
+.nav-item .nav-link {
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: color 0.3s;
 }
 
-nav .nav-links li {
-  margin: 0 15px;
+.nav-link:hover {
+  color:  #ff9742!important;
 }
-
-nav .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s ease;
-}
-
-nav .nav-links a:hover {
-  color: #ff6347;
-}
-
-nav .hamburger {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
-  color: white;
-}
-
 @media (max-width: 768px) {
    nav .hamburger {
     display: block;
   }
 
- nav  .nav-links {
+ nav .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -84,6 +63,7 @@ nav .hamburger {
   nav .nav-links.show {
     display: flex;
   }
+
 }
 
 /* Hero Section */
