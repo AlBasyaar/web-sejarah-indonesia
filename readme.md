@@ -1,1 +1,1 @@
-halo ini web sejarah
+Web ini dibuat untuk memberikan gambaran sejarah kedatangan dan pengaruh bangsa Eropa di Indonesia. Portugis datang pada abad ke-16 untuk menguasai perdagangan rempah, diikuti oleh Spanyol yang lebih fokus di Filipina. Inggris mulai berdagang pada abad ke-17, namun Belanda, melalui VOC, menguasai Indonesia hingga kemerdekaan pada 17 Agustus 1945
